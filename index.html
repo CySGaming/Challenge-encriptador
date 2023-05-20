@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+<!DOCTYPE html>
+<html lang ="es">
+<head>
+	<title>Encriptador 1er intento</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+	<header>
+		<h1 class="titulo_principal">Encriptador/Desencriptador con Javascript</h1>
+		<h1 class="Datos">Challenge 1</h1>
+		<h1 class="Datos">Construye un encriptador de texto con Javascript</h1>
+	</header>
+<body>
+	<div class="ConjuntoReglas">
+		<h1 class="Datos">Reglas</h1>
+		<li class="Reglas">Debe funcionar solo con letras minúsculas</li>
+		<li class="Reglas">No deben ser utilizados letras con acentos ni caracteres especiales</li>
+		<li class="Reglas">Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original</li>
+		
+	</div>
+	<div class="Encriptador">
+		<label>Ingresa el texto a encriptar</label>
+		<input type="text" id="entradaE" class="Entradas">
+		<button onclick="encriptar()">Encriptar</button>
+		<p id="mensajeE"></p>
+	</div>
+	<div class="Desencriptador">
+		<label>Ingresa el texto a Desencriptar</label>
+		<input type="text" id="entradaD" class="Entradas"  >
+		<button onclick="desencriptar()">Desencriptar</button>
+		<p id="mensajeD"></p>
+	</div>
+</body>
+</html>
