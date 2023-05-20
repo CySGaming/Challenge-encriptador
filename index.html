@@ -17,18 +17,18 @@
 		<h1 class="Datos">Reglas</h1>
 		<li class="Reglas">Debe funcionar solo con letras minúsculas</li>
 		<li class="Reglas">No deben ser utilizados letras con acentos ni caracteres especiales</li>
-		<li class="Reglas">Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original</li>
+		
 		
 	</div>
 	<div class="Encriptador">
 		<label>Ingresa el texto a encriptar</label>
-		<input type="text" id="entradaE" class="Entradas">
+		<input type="text" id="entradaE" class="Entradas" onkeypress="return soloLetras(event)">
 		<button onclick="encriptar()">Encriptar</button>
 		<p id="mensajeE"></p>
 	</div>
 	<div class="Desencriptador">
 		<label>Ingresa el texto a Desencriptar</label>
-		<input type="text" id="entradaD" class="Entradas"  >
+		<input type="text" id="entradaD" class="Entradas"  onkeypress="return soloLetras(event)">
 		<button onclick="desencriptar()">Desencriptar</button>
 		<p id="mensajeD"></p>
 	</div>
