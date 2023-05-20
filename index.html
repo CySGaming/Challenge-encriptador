@@ -22,13 +22,13 @@
 	</div>
 	<div class="Encriptador">
 		<label>Ingresa el texto a encriptar</label>
-		<input type="text" id="entradaE" class="Entradas" onkeypress="return soloLetras(event)">
+		<input type="text" id="entradaE" class="Entradas" onkeypress="return soloLetras(event);" onkeyup="this.value=this.value.toLowerCase();" >
 		<button onclick="encriptar()">Encriptar</button>
 		<p id="mensajeE"></p>
 	</div>
 	<div class="Desencriptador">
 		<label>Ingresa el texto a Desencriptar</label>
-		<input type="text" id="entradaD" class="Entradas"  onkeypress="return soloLetras(event)">
+		<input type="text" id="entradaD" class="Entradas"  onkeypress="return soloLetras(event);"onkeyup="this.value=this.value.toLowerCase();">
 		<button onclick="desencriptar()">Desencriptar</button>
 		<p id="mensajeD"></p>
 	</div>
